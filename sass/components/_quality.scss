@@ -1,0 +1,45 @@
+.hide {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.quality {
+  display: flex;
+}
+
+.quality__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.quality__box {
+  width: 270px;
+  height: 120px;
+  background-color: $secondary-light-bg-color;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quality__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.quality__title {
+  color: $title-text-color;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.quality__description {
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
+}
