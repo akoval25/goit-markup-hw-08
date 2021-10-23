@@ -3,7 +3,7 @@
 }
 
 .overlay {
-  max-width: 1600px;
+  width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -14,6 +14,12 @@
   background-position: center;
   padding: 200px 0;
   text-align: center;
+
+  @media (max-width: 480px) {
+    max-width: 480px;
+    height: 400px;
+    padding: 118px 0;
+  }
 }
 
 .hero__title {
@@ -26,6 +32,11 @@
   margin-top: 0;
   margin-bottom: 30px;
   text-transform: uppercase;
+
+  @media (max-width: 480px) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
 }
 
 .hero__button {

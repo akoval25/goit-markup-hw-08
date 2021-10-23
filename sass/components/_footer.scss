@@ -2,11 +2,18 @@
   background-color: $secondary-dark-bg-color;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media (max-width: 480px) {
+    width: 480px;
+  }
 }
 
 .footer-container {
   align-items: baseline;
-  display: flex;
+
+  @media (min-width: 481px) {
+    display: flex;
+  }
 }
 
 .footer-logo {
@@ -19,6 +26,11 @@
   display: block;
   margin-bottom: 20px;
   color: $primary-bg-color;
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+    text-align: center;
+  }
 }
 
 .footer-contacts {
@@ -31,6 +43,10 @@
   &:nth-child(1) {
     margin-top: 0;
   }
+
+  @media (max-width: 480px) {
+    margin-top: 8px;
+  }
 }
 
 .footer-contacts__address {
@@ -41,6 +57,10 @@
   text-decoration: none;
   display: block;
   color: $primary-bg-color;
+
+  @media (max-width: 480px) {
+    text-align: center;
+  }
 }
 
 .footer-contacts__email-tel {
@@ -58,11 +78,22 @@
     color: $accent-color;
     fill: $accent-color;
   }
+
+  @media (max-width: 480px) {
+    text-align: center;
+  }
 }
 
 .connect {
   margin-left: 80px;
   margin-right: 93px;
+
+  @media (max-width: 480px) {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+  }
 }
 
 .connect__text {
@@ -72,10 +103,19 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+
+  @media (max-width: 480px) {
+    text-align: center;
+    margin-top: 60px;
+  }
 }
 
 .connect__list {
   display: flex;
+
+  @media (max-width: 480px) {
+    justify-content: center;
+  }
 }
 
 .connect__item {
@@ -115,12 +155,16 @@
 }
 
 .footer-form {
-  display: flex;
-  align-items: baseline;
+  @media (min-width: 481px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer-form__label {
-  margin-right: 12px;
+  @media (min-width: 481px) {
+    margin-right: 12px;
+  }
 }
 
 .footer-form__email {
@@ -137,6 +181,11 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: transparent;
+
+  @media (max-width: 480px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
 }
 
 .footer-form__btm {
@@ -155,6 +204,11 @@
   justify-content: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+
+  @media (max-width: 480px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .footer-form__icon {

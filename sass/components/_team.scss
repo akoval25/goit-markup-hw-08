@@ -1,5 +1,8 @@
 .team {
   background-color: $secondary-light-bg-color;
+  @media (max-width: 480px) {
+    width: 480px;
+  }
 }
 
 .team__title {
@@ -9,10 +12,17 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 50px;
+
+  @media (max-width: 480px) {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
 }
 
 .members {
-  display: flex;
+  @media (min-width: 481px) {
+    display: flex;
+  }
 }
 
 .member {
@@ -21,8 +31,22 @@
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media (min-width: 481px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 30px;
+  }
+}
+
+.member__foto {
+  width: 270px;
+
+  @media (max-width: 480px) {
+    width: 450px;
   }
 }
 

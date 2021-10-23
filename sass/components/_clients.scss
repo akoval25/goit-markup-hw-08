@@ -4,18 +4,40 @@
   line-height: 1.17;
   text-align: center;
   color: $title-text-color;
+
+  @media (max-width: 480px) {
+    font-size: 28px;
+  }
 }
 
 .clients {
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
+
+  @media (max-width: 480px) {
+    margin-top: 15px;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  @media (min-width: 481px) {
+    justify-content: space-between;
+    margin-top: 50px;
+  }
 }
 
 .client {
   width: 170px;
   height: 92px;
+
+  @media (max-width: 480px) {
+    width: 210px;
+    margin: 15px;
+    &:nth-child(n + 5) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .client__link {
@@ -34,6 +56,10 @@
   &:focus {
     border: 1px solid $accent-color;
     color: $accent-color;
+  }
+
+  @media (max-width: 480px) {
+    width: 210px;
   }
 }
 

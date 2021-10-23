@@ -28,6 +28,12 @@
     color: $accent-color;
     fill: $accent-color;
   }
+
+  @media (max-width: 480px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 24px;
+  }
 }
 
 .site-nav {
@@ -36,6 +42,10 @@
 
   &__item:not(:last-child) {
     margin-right: 50px;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
   }
 }
 
@@ -79,6 +89,10 @@
   display: flex;
   align-items: center;
   margin-left: auto;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .contacts__item {
