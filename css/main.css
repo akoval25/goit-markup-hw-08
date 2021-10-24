@@ -44,7 +44,7 @@ img {
   padding-left: 15px;
 }
 
-@media (min-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -59,13 +59,15 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.container__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 768px) {
+  .container__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .nav {
@@ -95,7 +97,7 @@ img {
   fill: #2196f3;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .logo {
     font-size: 26px;
     padding-top: 24px;
@@ -116,7 +118,7 @@ img {
   margin-right: 50px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .site-nav {
     display: none;
   }
@@ -168,7 +170,7 @@ img {
   margin-left: auto;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .contacts {
     display: none;
   }
@@ -222,6 +224,93 @@ img {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.mobil-open-icon {
+  fill: #212121;
+  color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobil-open-icon:hover, .mobil-open-icon:focus {
+  fill: #2196f3;
+  color: #2196f3;
+}
+
+.mobil-close-icon {
+  fill: #212121;
+  color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobil-close-icon:hover, .mobil-close-icon:focus {
+  fill: #2196f3;
+  color: #2196f3;
+}
+
+.menu-button .mobil-close-icon {
+  display: none;
+}
+
+.menu-button.is-open .mobil-close-icon {
+  display: block;
+}
+
+.menu-button.is-open .mobil-open-icon {
+  display: none;
+}
+
+.mobil {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: #fff;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobil.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 .hero {
   background-color: #2f303a;
 }
@@ -239,7 +328,7 @@ img {
   text-align: center;
 }
 
-@media (min-width: 480px) {
+@media screen and (min-width: 480px) {
   .overlay {
     width: 480px;
   }
@@ -525,7 +614,7 @@ textarea {
   margin: -1px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .quality {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -537,7 +626,7 @@ textarea {
   margin-bottom: 30px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .quality__item:not(:last-child) {
     margin-right: 30px;
   }
@@ -559,7 +648,7 @@ textarea {
           justify-content: center;
 }
 
-@media (min-width: 480px) {
+@media screen and (min-width: 480px) {
   .quality__box {
     width: 450px;
   }
@@ -588,7 +677,7 @@ textarea {
   padding-top: 0;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .section--padding {
     display: none;
   }
@@ -651,14 +740,14 @@ textarea {
   font-size: 28px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .team__title {
     font-size: 36px;
     margin-bottom: 50px;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .members {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -673,25 +762,25 @@ textarea {
   border-bottom-right-radius: 4px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .member:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .member {
     margin-bottom: 30px;
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .member__foto {
     width: 450px;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .member__foto {
     width: 270px;
   }
@@ -792,7 +881,7 @@ textarea {
   margin-bottom: 30px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .clients-title {
     font-size: 36px;
   }
@@ -802,7 +891,7 @@ textarea {
   list-style: none;
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .clients {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -815,7 +904,7 @@ textarea {
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .clients {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -828,7 +917,7 @@ textarea {
   height: 92px;
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .client {
     width: 210px;
     margin: 15px;
@@ -838,7 +927,7 @@ textarea {
   }
 }
 
-@media (max-width: 479px) {
+@media screen and (max-width: 479px) {
   .client {
     margin-left: auto;
     margin-right: auto;
@@ -875,7 +964,7 @@ textarea {
   color: #2196f3;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .client__link {
     width: 210px;
   }
@@ -902,7 +991,7 @@ textarea {
           align-items: baseline;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .footer-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -922,7 +1011,7 @@ textarea {
   color: #ffffff;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .footer-logo {
     text-align: left;
     font-size: 26px;
@@ -941,7 +1030,7 @@ textarea {
   margin-top: 0;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .footer-contacts__item {
     margin-top: 8px;
   }
@@ -959,7 +1048,7 @@ textarea {
   color: #ffffff;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .footer-contacts__address {
     text-align: center;
   }
@@ -984,7 +1073,7 @@ textarea {
   fill: #2196f3;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .footer-contacts__email-tel {
     text-align: center;
   }
@@ -995,7 +1084,7 @@ textarea {
   margin-right: 93px;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .connect {
     text-align: center;
     margin-left: auto;
@@ -1013,7 +1102,7 @@ textarea {
   margin-bottom: 20px;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .connect__text {
     text-align: center;
     margin-top: 60px;
@@ -1026,7 +1115,7 @@ textarea {
   display: flex;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .connect__list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1075,7 +1164,7 @@ textarea {
   fill: #ffffff;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .footer-form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1086,7 +1175,7 @@ textarea {
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .footer-form__label {
     margin-right: 12px;
   }
@@ -1113,14 +1202,14 @@ textarea {
   background-color: transparent;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .footer-form__email {
     width: 450px;
     margin-bottom: 20px;
   }
 }
 
-@media (max-width: 479px) {
+@media screen and (max-width: 479px) {
   .footer-form__email {
     width: 100%;
   }
@@ -1151,7 +1240,7 @@ textarea {
   color: #ffffff;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .footer-form__btm {
     margin-left: auto;
     margin-right: auto;

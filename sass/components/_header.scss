@@ -3,8 +3,10 @@
 }
 
 .container__header {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav {
@@ -31,7 +33,7 @@
     fill: $accent-color;
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     font-size: 26px;
     padding-top: 24px;
     padding-bottom: 25px;
@@ -46,7 +48,7 @@
     margin-right: 50px;
   }
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 }
@@ -92,7 +94,7 @@
   align-items: center;
   margin-left: auto;
 
-  @media (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }

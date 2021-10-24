@@ -1,7 +1,7 @@
 .section--padding {
   padding-top: 0;
 
-  @media (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
