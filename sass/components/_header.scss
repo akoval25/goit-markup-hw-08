@@ -16,23 +16,25 @@
   color: #000000;
   font-family: $secondary-font-family;
   font-weight: 700;
-  font-size: 26px;
+
   line-height: 1.2;
   text-decoration: none;
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
+
   margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 24px;
 
   &__first-part {
     color: $accent-color;
     fill: $accent-color;
   }
 
-  @media (max-width: 480px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    font-size: 24px;
+  @media (min-width: 768px) {
+    font-size: 26px;
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
 
@@ -44,7 +46,7 @@
     margin-right: 50px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     display: none;
   }
 }
@@ -90,7 +92,7 @@
   align-items: center;
   margin-left: auto;
 
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
