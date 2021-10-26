@@ -6,7 +6,7 @@
   font-size: 28px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1199px) {
     font-size: 36px;
   }
 }
@@ -14,7 +14,7 @@
 .clients {
   list-style: none;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     display: flex;
     margin-top: 15px;
     flex-wrap: wrap;
@@ -22,7 +22,7 @@
     margin-right: -15px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1199px) {
     justify-content: space-between;
     margin-top: 50px;
   }
@@ -36,6 +36,18 @@
     margin: 15px;
     &:nth-child(n + 5) {
       margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 226px;
+    margin: 15px;
+    &:nth-child(n + 4) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(-n + 3) {
+      margin-top: 0;
     }
   }
 
@@ -70,6 +82,10 @@
 
   @media screen and (max-width: 767px) {
     width: 210px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 226px;
   }
 }
 
