@@ -589,7 +589,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 455px;
   }
@@ -738,10 +738,16 @@ textarea {
           justify-content: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .form__checkbox {
     font-size: 12px;
     line-height: 1.17;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .form__checkbox {
+    font-size: 10px;
   }
 }
 
@@ -1254,6 +1260,19 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-logo-contacts {
+    width: calc(50% - 15px);
+  }
+}
+
 .footer-logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -1266,7 +1285,7 @@ textarea {
   color: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1199px) {
   .footer-logo {
     text-align: left;
     font-size: 26px;
@@ -1303,7 +1322,7 @@ textarea {
   color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-contacts__address {
     text-align: center;
   }
@@ -1328,7 +1347,7 @@ textarea {
   fill: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-contacts__email-tel {
     text-align: center;
   }
@@ -1348,6 +1367,20 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .connect {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-conteiner {
+    width: calc(100% - 30px);
+    margin-top: 60px;
+  }
+}
+
 .connect__text {
   font-weight: 700;
   font-size: 14px;
@@ -1357,10 +1390,16 @@ textarea {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .connect__text {
     text-align: center;
     margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .connect__text {
+    margin-top: 0;
   }
 }
 
@@ -1370,7 +1409,7 @@ textarea {
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .connect__list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1419,7 +1458,7 @@ textarea {
   fill: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1199px) {
   .footer-form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1457,10 +1496,11 @@ textarea {
   background-color: transparent;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-form__email {
     width: 450px;
-    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1495,10 +1535,16 @@ textarea {
   color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-form__btm {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-form__btm {
+    margin-top: 20px;
   }
 }
 
@@ -1578,6 +1624,12 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__card {
+    width: 354px;
+  }
+}
+
 @media (min-width: 768px) {
   .portfolio {
     display: -webkit-box;
@@ -1601,11 +1653,23 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__card {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .portfolio__card:nth-child(2n) {
+    margin-right: 0;
+  }
+  .portfolio__card:nth-child(9) {
+    margin-bottom: 0;
+  }
+}
+
 .portfolio__link {
   list-style: none;
   text-decoration: none;
   display: inline-block;
-  width: calc((100% - 60) / 3);
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1621,6 +1685,12 @@ textarea {
 .portfolio__link:focus .portfolio__text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+@media (max-width: 1199px) {
+  .portfolio__link {
+    width: calc((100% - 60) / 3);
+  }
 }
 
 .portfolio__overlay {
