@@ -87,6 +87,8 @@
   .portfolio__card {
     margin-right: 30px;
     margin-bottom: 30px;
+    display: flex;
+    flex-grow: 1;
 
     &:nth-child(2n) {
       margin-right: 0;
@@ -119,6 +121,9 @@
 @media (max-width: 1199px) {
   .portfolio__link {
     width: calc((100% - 60) / 3);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
 }
 
@@ -175,6 +180,12 @@
   border: 1px solid #eeeeee;
   border-top: 0;
   padding: 20px 24px 20px 24px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
 }
 
 a .portfolio__project {

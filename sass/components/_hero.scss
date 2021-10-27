@@ -15,11 +15,17 @@
   text-align: center;
 
   @media screen and (min-width: 480px) {
-    width: 480px;
+    max-width: 480px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0;
   }
 }
 
@@ -33,6 +39,11 @@
   margin-top: 0;
   margin-bottom: 30px;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
