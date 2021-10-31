@@ -14,12 +14,11 @@
 .clients {
   list-style: none;
 
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     margin-top: 15px;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
+    margin: -15px;
   }
 
   @media screen and (min-width: 1199px) {
@@ -53,11 +52,11 @@
   }
 
   @media screen and (max-width: 479px) {
-    margin-left: auto;
-    margin-right: auto;
-    width: 210px;
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-basis: calc(100% / 2 - 30px);
     margin-bottom: 30px;
-    &:nth-child(6) {
+    &:nth-child(n + 5) {
       margin-bottom: 0;
     }
   }
@@ -81,7 +80,11 @@
     color: $accent-color;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 210px;
   }
 

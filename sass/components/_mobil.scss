@@ -82,10 +82,15 @@
   float: right;
 }
 
-.mobil-nav {
-  margin-top: 48px;
+.mobil-content {
+  height: 100%;
   margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
+.mobil-nav {
   @media (max-width: 479px) {
     margin-left: 15px;
   }
@@ -109,9 +114,6 @@
 }
 
 .mobil-contacts {
-  margin-top: 50%;
-  margin-left: 40px;
-
   @media (max-width: 479px) {
     margin-left: 15px;
   }
@@ -141,7 +143,6 @@
 
 .mobil-social {
   display: flex;
-  margin-left: 40px;
   margin-top: 64px;
 
   @media (max-width: 479px) {

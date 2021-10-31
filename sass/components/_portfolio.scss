@@ -52,10 +52,13 @@
 
 .portfolio__card {
   @media (max-width: 767px) {
-    margin-bottom: 30px;
     text-align: center;
     width: 450px;
     height: 404px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @media (max-width: 479px) {
