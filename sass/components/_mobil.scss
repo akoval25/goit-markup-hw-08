@@ -109,6 +109,10 @@
   color: $title-text-color;
 }
 
+.mobil-nav__link--active {
+  color: $accent-color;
+}
+
 .mobil-nav__link--active:active {
   color: $accent-color;
 }

@@ -410,6 +410,10 @@ img {
   color: #212121;
 }
 
+.mobil-nav__link--active {
+  color: #2196f3;
+}
+
 .mobil-nav__link--active:active {
   color: #2196f3;
 }
