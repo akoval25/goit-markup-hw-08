@@ -414,6 +414,10 @@ img {
   color: #2196f3;
 }
 
+.site-nav__link--active-studio {
+  color: #2196f3;
+}
+
 @media (max-width: 479px) {
   .mobil-contacts {
     margin-left: 15px;
