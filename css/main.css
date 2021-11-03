@@ -391,12 +391,6 @@ img {
       justify-content: space-around;
 }
 
-@media (max-width: 479px) {
-  .mobil-nav {
-    margin-left: 15px;
-  }
-}
-
 .mobil-nav__item:not(:last-child) {
   margin-bottom: 35px;
 }
@@ -435,6 +429,12 @@ img {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+@media screen and (max-width: 479px) {
+  .mobil-contacts__tel {
+    font-size: 28px;
+  }
 }
 
 .mobil-contacts__mail {

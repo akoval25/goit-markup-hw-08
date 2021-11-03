@@ -90,12 +90,6 @@
   justify-content: space-around;
 }
 
-.mobil-nav {
-  @media (max-width: 479px) {
-    margin-left: 15px;
-  }
-}
-
 .mobil-nav__item:not(:last-child) {
   margin-bottom: 35px;
 }
@@ -134,6 +128,10 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: $accent-color;
+
+  @media screen and (max-width: 479px) {
+    font-size: 28px;
+  }
 }
 
 .mobil-contacts__mail {
